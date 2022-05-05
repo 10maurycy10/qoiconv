@@ -38,7 +38,7 @@ fn main() {
 	for out in outs {
 		println!("{} -> {}", infile, out);
 		if out.ends_with(".qoi") {
-			let qoi = encode_qoi(&img, res.0 as usize, res.1 as usize, 3, 1).unwrap();
+			let qoi = encode_qoi(&img, res.0 as usize, res.1 as usize, 4, 0).unwrap();
 			std::fs::File::create(out).unwrap().write_all(&qoi).unwrap();
 		} else {
 			image::save_buffer(&Path::new(out), &img, res.1, res.0, image::ColorType::Rgba8).unwrap();
