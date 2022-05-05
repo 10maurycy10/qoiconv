@@ -2,6 +2,13 @@
 name = "qoiconv"
 version = "0.1.0"
 edition = "2021"
+readme = "README.md"
+description = "A QOI converter"
+homepage = "https://github.com/10maurycy10/qoiconv/"
+repository = "https://github.com/10maurycy10/qoiconv.git"
+license = "LGPL-2.0-or-later"
+keywords = ["image", "graphics", "qoi", "encoder", "decoder"]
+categories = ["multimedia::images", "compression"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
