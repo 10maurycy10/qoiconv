@@ -20,7 +20,10 @@ fn main() {
 			None => break
 		}
 	}
-	let infile = infile.unwrap();
+	let infile = infile.expect("Use 'in <filename>' to specify an input file");
+    if outs.len() == 0 {
+        println!("No output file! Use 'out <filename>' to output an image")
+    }
 	let mut img = None;
 	let mut res = None;
 	if infile.ends_with(".qoi") {
