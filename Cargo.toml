@@ -13,5 +13,5 @@ categories = ["multimedia::images", "compression"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-libqoi = "0.2.1" #{path = "./libdif"}
+libqoi = "0.3.2" #{path = "./libdif"}
 image = "0.24.1"

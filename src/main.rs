@@ -27,7 +27,7 @@ fn main() {
 		let file = &std::fs::read(infile).unwrap();
 		let out = decode_qoi(file).expect("Invaid file");
 		img = Some(out.1);
-		res = Some((out.0.hight, out.0.width));
+		res = Some((out.0.height, out.0.width));
 	} else {
 		let iimg = image::io::Reader::open(infile).unwrap().decode().unwrap().into_rgba8();
 		res = Some((iimg.height(), iimg.width()));
